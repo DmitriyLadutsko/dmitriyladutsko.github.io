@@ -614,29 +614,26 @@ span.top-menu__link {
 	background-color: var(--dark);
 	color: #fff;
 	text-align: center;
-	background-image: url(../images/interface/img-hidden.png);
-	background-repeat: no-repeat;
-	/* background-position: center; */
 }
 .advantages-wrapper {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	padding: 60px 0;
+	padding: 50px 0;
 }
 .advantages-item {
-	position: relative;
-	font-size: var(--small-text);
+	width: 343px;
+  font-size: var(--small-text);
+  margin: 20px 0;
+  text-align: start;
+  display: flex;
+  align-items: center;
 }
-/* .advantages-item::before {
-	content: '';
-	display: inline-block;
-	width: 12px;
-	height: 15px;
-	background-image: url(../images/interface/mapmarker.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-right: 8px;
-	position: relative;
-	top: 1.4px;
-} */
+.advantages-item img {
+	width: 40px;
+	height: 40px;
+}
+.advantages-item span {
+	margin: 0 23px;
+	line-height: var(--lineheight);
+}
