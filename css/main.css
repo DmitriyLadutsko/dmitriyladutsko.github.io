@@ -619,12 +619,12 @@ span.top-menu__link {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	padding: 50px 0;
+	padding: 40px 0;
 }
 .advantages-item {
 	width: 343px;
   font-size: var(--small-text);
-  margin: 20px 0;
+  margin: 10px 0;
   text-align: start;
   display: flex;
   align-items: center;
