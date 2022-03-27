@@ -110,6 +110,9 @@
 	.home-slider__heading {
 		font-size: 40px;
 	}
+	.advantages-item {
+		width: 70%;
+	}
 }
 
 
