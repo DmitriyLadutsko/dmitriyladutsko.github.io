@@ -195,6 +195,7 @@ span.top-menu__link {
 }
 .home-slider__slide {
 	background-size: cover;
+	background-position: bottom;
 	display: flex;
 	align-items: center;
 	padding: 0 10px;
