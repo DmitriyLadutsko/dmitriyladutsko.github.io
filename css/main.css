@@ -378,11 +378,12 @@ span.top-menu__link {
 }
 .about-slider__caption {
 	position: absolute;
+	display: flex;
 	bottom: 60px;
 	z-index: 1;
 	color: #fff;
 	right: -25px;
-	padding: 2px 50px 2px 25px;
+	padding: 5px 25px 5px 25px;
 	border-radius: var(--radius-style);
 	font-family: roboto-wt, sans-serif;
 	font-weight: 700;
@@ -400,15 +401,26 @@ span.top-menu__link {
 	opacity: 0.9;
 	z-index: -1;
 }
+.caption-number {
+	display: flex;
+  flex-direction: column;
+  height: 102px;
+  margin-top: -13px;
+  margin-right: 8px;
+}
+.caption-number__main {
+	height: 62%;
+}
 .about-slider__caption span {
 	font-size: 21px;
 	font-family: raleway-wt, sans-serif;
 	font-weight: 300;
-	max-width: 100px;
+	max-width: 120px;
 	display: inline-block;
 	line-height: 1.2;
 	text-align: left;
 	padding-left: 2px;
+	padding-top: 5px;
 }
 .about-slider__caption p {
 	font-size: 24px;
@@ -419,6 +431,7 @@ span.top-menu__link {
 	line-height: 1.2;
 	/* text-align: left; */
 	padding-left: 2px;
+	margin-bottom: 10px;
 }
 
 /* USAGE */
