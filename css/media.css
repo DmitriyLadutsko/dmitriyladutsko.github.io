@@ -65,7 +65,9 @@
 	.logo__link img {
 		left: 20px;
 	}
-	.usage-item__desc {
+	.usage-item__desc,
+	.blog__title,
+	.blog-item a {
 		font-size: 16px;
 	}
 	.usage__top {
@@ -84,7 +86,9 @@
 		margin: 0;
 		padding: 0;
 	}
-	.usage__desc {
+	.usage-item__desc,
+	.blog__title,
+	.blog-item a {
 		font-size: 20px;
 	}
 	.usage__button-wrapper {

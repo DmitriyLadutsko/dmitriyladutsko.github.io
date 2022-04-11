@@ -89,15 +89,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 100) {
-		$('.scrollup').fadeIn();
+			$('.scrollup').fadeIn();
 		} else {
-		$('.scrollup').fadeOut();
+			$('.scrollup').fadeOut();
 		}
-		});
+	});
 		 
-		$('.scrollup').click(function(){
+	$('.scrollup').click(function() {
 		$("html, body").animate({ scrollTop: 0 }, 100);
 		return false;
-		});
+	});
 
 })
