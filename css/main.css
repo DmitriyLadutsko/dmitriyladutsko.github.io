@@ -726,13 +726,12 @@ span.top-menu__link {
 	flex-direction: column;
 	justify-content: center;
 	height: 100%;
-	/* min-height: 324px; */
 	margin: 0;
 	text-align: center;
 	background-color: #fff;
 }
 .blog-item__last:hover img{
-	opacity: .5;
+	opacity: .15;
 	transition: opacity .5s ease-out;
 }
 .blog-item__last span {
@@ -746,7 +745,7 @@ span.top-menu__link {
 	position: absolute;
 	top: 0;
 	left: 0;
-	opacity: .8;
+	opacity: .5;
 }
 
 /* SCROLL UP */

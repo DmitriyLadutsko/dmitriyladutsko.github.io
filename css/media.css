@@ -17,6 +17,9 @@
 	.about-slider__caption {
 		right: var(--gutter);
 	}
+	.blog-item__last img{
+		opacity: .3;
+	}
 }
 
 /* md <= Large (lg) */
