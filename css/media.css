@@ -74,6 +74,7 @@
 		padding-top: 40px;
 		padding-bottom: 155px;
 	}
+
 }
 
 /* sm <= Medium (md) */
@@ -107,6 +108,17 @@
 	.advantages-item {
 		width: 50%;
 	}
+	.blog-item__last img {
+		display: none;
+	}
+	.blog-item__last {
+		margin: 0;
+		padding: 10px 0;
+		background-color: var(--accent);
+		flex-direction: row;
+		border-radius: var(--radius-style);
+	}
+
 }
 
 /* xs <= Small (sm) */
@@ -117,6 +129,7 @@
 	.advantages-item {
 		width: 70%;
 	}
+	
 }
 
 
@@ -134,12 +147,17 @@
 
 /* Medium (md) */
 @media (min-width : 768px) {
-
+	.blog-item__last {
+		min-height: 324px;
+	}
+	.blog-item__last img {
+		height: 100%;
+	}
 }
 
-/* Large (lg) */
+/* Large (lg) */;
 @media (min-width : 992px) {
-
+	
 }
 
 /* Extra large (xl) */
