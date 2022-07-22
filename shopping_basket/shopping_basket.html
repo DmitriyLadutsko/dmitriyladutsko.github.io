@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOU</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;500;600&family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./shopping_basket.css" />
+  </head>
+  <body>
+      <div class="container_first">
+      <header class="header">
+        <div class="header__inner">
+          <a class="logo" href="../index.html">
+            <img
+              src="../images/logo.jpg"
+              alt="logo"
+              height="32px"
+              width="107px"
+            />
+          </a>
+          <nav class="menu">
+            <ul class="menu_list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">New</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="../catalog/catalog.html">Catalog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="../lookbook/lookbook.html"
+                  >Lookbook</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <nav class="header__nav-icons">
+            <ul class="header__nav-icons-list">
+              <li class="header__nav-icons-item hidden_li">
+                <div class="header__nav-icons-link link_search" href="#">
+                  <img
+                    id="search"
+                    src="../icons/search.svg"
+                    alt="search"
+                    width="40px"
+                    height="40px"
+                  />
+                  <div class="search-pole">
+                    <form action="">
+                      <input class="search" type="" placeholder="Search" />
+                    </form>
+                  </div>
+                </div>
+              </li>
+              <li class="header__nav-icons-item">
+                <a class="header__nav-icons-link" href="#"
+                  ><div class="header__nav-icons-caption">
+                    <span class="like caption">0</span>
+                    <img
+                      style="vertical-align: middle"
+                      src="../icons/heart.svg"
+                      alt="likes"
+                      width="40px"
+                      height="40px"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="header__nav-icons-item hidden_li">
+                <a class="header__nav-icons-link" href="#">
+                  <img
+                    src="../icons/user.svg"
+                    alt="profile"
+                    width="40px"
+                    height="40px"
+                  />
+                </a>
+              </li>
+              <li class="header__nav-icons-item">
+                <a
+                  id="shopping_basket"
+                  class="header__nav-icons-link"
+                  href="../shopping_basket/shopping_basket.html"
+                >
+                  <div class="header__nav-icons-caption">
+                    <span class="cart caption">0</span>
+                    <img
+                      style="vertical-align: middle"
+                      src="../icons/bag.svg"
+                      alt="bag"
+                      width="40px"
+                      height="40px"
+                    />
+                  </div>
+                </a>
+              </li>
+              <div class="burger-menu" id="burger-menu">
+                <span class="burger-menu-logo">
+                  <img src="../icons/logo-black.png" alt="logo" />
+                </span>
+    
+                <div class="burger-menu-btn">
+                  <span class="burger-menu-lines"></span>
+                </div>
+    
+                <div class="burger-menu-nav">
+                  <div class="separator"></div>
+    
+                  <div class="burger-menu-actions">
+                    <img src="../icons/search-white.png" alt="search" />
+                    <img src="../icons/user-white.png" alt="profile" />
+                  </div>
+    
+                  <div class="separator"></div>
+    
+                  <span class="burger-menu-item">New</span>
+                  <span class="burger-menu-item">Catalog</span>
+                  <span class="burger-menu-item-nested">CLOTHES</span>
+                  <span class="burger-menu-item-nested">DRESSES</span>
+                  <span class="burger-menu-item-nested">PAGAMAS</span>
+                  <span class="burger-menu-item-nested">SHOES</span>
+                  <span class="burger-menu-item-nested">ACCESSORIES</span>
+                  <span class="burger-menu-item">About</span>
+                  <span class="burger-menu-item">LookBook</span>
+                </div>
+    
+                <div class="burger-menu-overlay" id="burger-menu-overlay"></div>
+              </div>
+            </ul>
+          </nav>
+          
+          </div>
+        </div>
+      </header>
+    <div class="basket_title">
+      <h1 id="basket_title_text" class="basket_title__text">Cart</h1>
+    </div>
+   
+      
+        <div class="container_cart">
+          <div class="tabs">
+            <input class="radio" id="tab1" type="radio" name="tabs" />
+            <label class="label_tabs active_tab"  for="tab1">CART</label>
+            <input class="radio" id="tab2" type="radio" name="tabs" />
+            <label class="label_tabs"  for="tab2">YOUR dATA</label>
+            <input class="radio" id="tab3" type="radio" name="tabs" />
+            <label class="label_tabs" for="tab3">SHIPPING</label>
+            <input class="radio" id="tab4" type="radio" name="tabs" />
+            <label class="label_tabs" for="tab4">VERIFICATION</label>
+            <input class="radio" id="tab5" type="radio" name="tabs" />
+            <label class="label_tabs" for="tab5">Finish</label>
+          </div>
+          <div class="visible" id="content1">
+            <div class="cart_container">
+              <div class="your_order container_title_font">YOUR ORDER</div>
+              <div class="container_title">
+                <div class="selection container_title_font">Selection</div>
+                <div class="Unit_price container_title_font">Unit price</div>
+                <div class="Quantity container_title_font">Quantity</div>
+                <div class="Total_price container_title_font">Total price</div>
+              </div>
+              <hr class="cart_container_line" />
+              <!-- 
+              <div class="product">
+                <img src="../images/cart_img/cart_img_1.jpg" alt="" />
+                <div class="product_desc_wrapper">
+                  <div class="product_title">
+                    Nevada - Dress in a shade of beige, made of pleasant to the
+                    touch fabric
+                  </div>
+                  <div class="product_size">
+                    size <span class="select_size">S</span>
+                  </div>
+                  <div class="product_colour">
+                    colour <span class="select_colour">Green</span>
+                  </div>
+                  <div class="remove">Remove</div>
+                </div>
+                <div class="cart_price">429 PLN</div>
+                <div class="select_quantity">
+                  <span class="minus">-</span> 1 <span class="plus">+</span>
+                </div>
+                <div class="total_price_of_product">429 PLN</div>
+              </div>
+              <div class="product">
+                <img src="../images/cart_img/cart_img_1.jpg" alt="" />
+                <div class="product_desc_wrapper">
+                  <div class="product_title">
+                    Nevada - Dress in a shade of beige, made of pleasant to the
+                    touch fabric
+                  </div>
+                  <div class="product_size">
+                    size <span class="select_size">S</span>
+                  </div>
+                  <div class="product_colour">
+                    colour <span class="select_colour">Green</span>
+                  </div>
+                  <div class="remove">Remove</div>
+                </div>
+                <div class="cart_price">429 PLN</div>
+                <div class="select_quantity">
+                  <span class="minus">-</span> 1 <span class="plus">+</span>
+                </div>
+                <div class="total_price_of_product">429 PLN</div>
+              </div> -->
+              <hr class="cart_container_line_bottom" />
+              <div class="total">
+                <div class="total_title_wrapper">
+                  <div class="total_title_inner">
+                    <div class="total_title">Subtotal</div>
+                    <div class="total_subtitle">Free shipping in Poland</div>
+                  </div>
+                  <div class="total_price">1407 PLN</div>
+                </div>
+                <button class="total_btn cart_totatal_btn">GO FURTHER</button>
+                <div class="container_link_to_shopping">
+                  <a
+                    class="continue_shopping"
+                    rel="stylesheet"
+                    href="../catalog/catalog.html"
+                    >CONTINUE SHOPPING</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="unvisible" id="content2">
+            <form
+              class="form_of_date"
+              name="test"
+              method="post"
+              action="input1.php"
+            >
+              <div class="first_column">
+                <p>
+                  <input
+                    class="input_field"
+                    type="text"
+                    size="40"
+                    placeholder="Name"
+                  />
+                </p>
+
+                <p>
+                  <input class="input_field" type="date" size="40" />
+                </p>
+                <p>
+                  <select class="input_field" name="city" id="">
+                    <option value="City">City</option>
+                    <option value="Gomel">Gomel</option>
+                    <option value="Minsk">Minsk</option>
+                    <option value="Brest">Brest</option>
+                    <option value="Vitebsk">Vitebsk</option>
+                  </select>
+                </p>
+                <p>
+                  <input
+                    class="input_field"
+                    type="tel"
+                    name="tel"
+                    placeholder="Telephone"
+                  />
+                </p>
+              </div>
+              <div class="second_column">
+                <p>
+                  <input
+                    class="input_field"
+                    type="text"
+                    size="40"
+                    placeholder="Last name"
+                  />
+                </p>
+                <p>
+                  <select class="input_field" name="Country" id="">
+                    <option value="County">Country</option>
+                    <option value="Belarus">Belarus</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Spain">Spain</option>
+                  </select>
+                </p>
+                <p>
+                  <input
+                    class="input_field"
+                    type="text"
+                    size="40"
+                    placeholder="Street and number"
+                  />
+                </p>
+                <p>
+                  <input
+                    class="input_field"
+                    type="email"
+                    name="e-mail"
+                    placeholder="E-mail"
+                  />
+                </p>
+              </div>
+            </form>
+            <div  class="checkbox_">
+              <p>
+                <label class="checkbox_label" for=""
+                  ><input
+                    class="checkbox_policy"
+                    type="checkbox"
+                    name="Privacy policy"
+                  />
+                  <span class="text_of_checkbox">
+                    I would like to subscribe to Disconnect newsletter, I agree
+                    to the
+                    <a class="style_of_policy" href="#">
+                      Privacy policy</a
+                    ></span
+                  ></label
+                >
+              </p>
+              <p>
+                <label class="checkbox_label" for=""
+                  ><input
+                    class="checkbox_adress"
+                    type="checkbox"
+                    name="another adress"
+                  />
+                  <span class="text_of_checkbox">
+                    Shipment to another address
+                  </span></label
+                >
+              </p>
+            </div>
+            <button class="total_btn your_data_btn">GO FURTHER</button>
+          </div>
+          <div class="content unvisible " id="content3">
+            <div class="radio_content_3_wrapper">
+              <div class="radio_select">
+                <input
+                  class="input_section_3"
+                  type="radio"
+                  id="radio"
+                  name="personal date"
+                />
+                <label class="radio_select_input" for="personal date"
+                  >Enter other data</label
+                >
+              </div>
+              <div class="radio_select">
+                <input
+                  class="input_section_3"
+                  type="radio"
+                  id="radio"
+                  name="personal date"
+                />
+                <label class="radio_select_input" for="personal date"
+                  >Use my personal data</label
+                >
+              </div>
+            </div>
+            <form
+              class="form_of_date"
+              name="test"
+              method="post"
+              action="input1.php"
+            >
+              <div class="first_column">
+                <p>
+                  <select class="input_field" name="Country" id="">
+                    <option value="County">Country</option>
+                    <option value="Belarus">Belarus</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Spain">Spain</option>
+                  </select>
+                </p>
+                <p>
+                  <input
+                    class="input_field"
+                    type="text"
+                    size="40"
+                    placeholder="Street and number"
+                  />
+                </p>
+                <p>
+                  <input
+                    class="input_field"
+                    type="email"
+                    name="e-mail"
+                    placeholder="E-mail"
+                  />
+                </p>
+              </div>
+              <div class="second_column">
+                <p>
+                  <select class="input_field" name="city" id="">
+                    <option value="City">City</option>
+                    <option value="Gomel">Gomel</option>
+                    <option value="Minsk">Minsk</option>
+                    <option value="Brest">Brest</option>
+                    <option value="Vitebsk">Vitebsk</option>
+                  </select>
+                </p>
+                <p>
+                  <input
+                    class="input_field"
+                    type="tel"
+                    name="tel"
+                    placeholder="Telephone"
+                  />
+                </p>
+                <p>
+                  <select class="input_field" name="payment method" id="">
+                    <option value=" Payment method">Payment method</option>
+                    <option value="Checks">Checks</option>
+                    <option value="Debit cards">Debit cards</option>
+                    <option value="Credit cards">Credit cards</option>
+                    <option value="Mobile payments">Mobile payments</option>
+                    <option value="Electronic bank transfers">
+                      Electronic bank transfers
+                    </option>
+                  </select>
+                </p>
+              </div>
+            </form>
+            <button class="total_btn go_further_btn">GO FURTHER</button>
+          </div>
+          <div class="unvisible" id="content4">
+            <img  class='verification_img'src="../images/big_images/verification-on-the-cryptocurrency-exchange-1.png" alt="verification">
+          </div>
+          <div class="unvisible" id="content5">
+            <div class="finish_text">
+              <p class="finish_text_descr_1">
+                <span class="finish_name">Anastasia</span>, thanks for the order. <br />Information about the
+                order has been sent to your e-mail.
+              </p>
+              <p class="finish_text_descr_1">
+                <a class="continue_shopping" href="../catalog/catalog.html"> CONTINUE SHOPPING</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      
+    
+    <div
+      
+      class="container_product_page_also_like"
+    >
+      <h1 class="also_like">YOU MAY <span class="gold">ALSO LIKE</span></h1>
+      <div class="also_like_cards">
+        <div class="catalog__product__cards big also_like_cards_item">
+          <img
+            class="also_like_img"
+            src="../images/catalog/catalog_card_2.jpg"
+            alt="catalog_card_2"
+          />
+          <div class="product_name_and_action">
+            <div class="name_of_card">Pasola Różowa</div>
+            <div class="like_and_by_product_page">
+              <a role="button" id="like-20" class="likes"
+                ><img class="golden_svg" src="../icons/heart.svg" alt="like"
+              /></a>
+              <a role="button" id="cart-20" class="carts"
+                ><img
+                  class="catalog_bag golden_svg"
+                  src="../icons/bag.svg"
+                  alt="by"
+              /></a>
+            </div>
+          </div>
+          <div class="price">469 PLN</div>
+        </div>
+        <div class="catalog__product__cards big card_2 also_like_cards_item">
+          <img
+            class="also_like_img"
+            src="../images/catalog/catalog_card_7.jpg"
+            alt="catalog_card_2"
+          />
+          <div class="product_name_and_action">
+            <div class="name_of_card">Pasola Różowa</div>
+            <div class="like_and_by_product_page">
+              <a role="button" id="like-21" class="likes"
+                ><img class="golden_svg" src="../icons/heart.svg" alt="like"
+              /></a>
+              <a role="button" id="cart-22" class="carts"
+                ><img
+                  class="catalog_bag golden_svg"
+                  src="../icons/bag.svg"
+                  alt="by"
+              /></a>
+            </div>
+          </div>
+          <div class="price">469 PLN</div>
+        </div>
+        <div class="catalog__product__cards small card_5 also_like_cards_item">
+          <img
+            class="also_like_img"
+            src="../images/catalog/catalog_card_8.jpg"
+            alt="catalog_card_8
+                "
+          />
+          <div class="product_name_and_action">
+            <div class="name_of_card">Pasola Różowa</div>
+            <div class="like_and_by_product_page">
+              <a role="button" id="like-23" class="likes"
+                ><img class="golden_svg" src="../icons/heart.svg" alt="like"
+              /></a>
+              <a role="button" id="cart-23" class="carts"
+                ><img
+                  class="catalog_bag golden_svg"
+                  src="../icons/bag.svg"
+                  alt="by"
+              /></a>
+            </div>
+          </div>
+          <div class="price">469 PLN</div>
+        </div>
+      </div>
+    </div> 
+    <footer class="footer">
+      <div class="subscribe">
+          <p>Signup to our newsletter</p>
+          <div class="subscribe-form">
+              <input type="text" placeholder="Email">
+              <button>subscribe</button>
+          </div>
+          <div class="policy">
+              <input type="checkbox">
+              <span>I would to subscribe to Disconnect newsletter, I agree to the <a>Privacy policy</a></span>
+          </div>
+      </div>
+      <div class="footer-wrapper">
+          <div class="footer-container">
+              <div class="footer-map">
+                  <img class="footer-logo"
+                      src="../images/footer_logo.png"
+                      width="133px"
+                      height="40px"
+                      alt="logo"
+                  >
+                  <div class="footer-navigation">
+                      <h3>Navigation</h3>
+                      <div class="links">
+                          <span> <a class="footer_links" href="../catalog/catalog.html" class="to_catalog" >Catalog </a></span>
+                          <span>News</span>
+                          <span><a class="footer_links" href="../lookbook/lookbook.html" class="to_lookbook" > LookBook </a></span>
+                          <span>About</span>
+                      </div>
+                      <div class="chevron">
+                          <img class="up" src="../icons/chevron-up.png" alt="up">
+                          <img class="down" src="../icons/chevron-down.png" alt="down">
+                      </div>
+                  </div>
+                  <div class="footer-service">
+                      <h3>Customer service</h3>
+                      <div class="links">
+                          <span>Payment and security</span>
+                          <span>Size guide</span>
+                          <span>Shipping</span>
+                          <span>Returns</span>
+                      </div>
+
+                      <div class="chevron">
+                          <img class="up" src="../icons/chevron-up.png" alt="up">
+                          <img class="down" src="../icons/chevron-down.png" alt="down">
+                      </div>
+                  </div>
+                  <div class="follow-us">
+                      <h3>Follow us</h3>
+                      <div class="lg">
+                          <span>Instagram</span>
+                          <span>Facebook</span>
+                          <span>YouTube</span>
+                      </div>
+                      <div class="sm">
+                          <img class="up" src="../icons/facebook.png" alt="facebook">
+                          <img class="up" src="../icons/instagramm.png" alt="instagramm">
+                          <img class="up" src="../icons/youtube.png" alt="youtube">
+                      </div>
+                  </div>
+                  <div class="footer-subscribe">
+                      <h3 class="footer_h3">Be the first to know</h3>
+                      <form action="#" method="post">
+                          <input type="email" name="email" placeholder="Email" required>
+                          <br>
+                          <button type="submit">subscribe</button>
+                      </form>
+                  </div>
+              </div>
+              <hr class="delimiter">
+              <div class="footer-signature">
+                  <div class="rights">© Lou. All rights reserved </div>
+                  <div class="policy">Private Policy </div>
+              </div>
+          </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/cart_2.js"></script>
+    <script src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/data.json"></script>
+    
+  </body>
+</html>

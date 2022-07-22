@@ -1,0 +1,300 @@
+data = `[
+{
+		"id": "1",
+		"name": "nevada",
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"price": 432,
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+	{
+		"id": "2",
+		"name": "orizona",
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"price": 456,
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+  {
+		"id": "3",
+		"name": "flora",
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"price": 432,
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+  {
+		"id": "4",
+		"name": "coco",
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"price": 432,
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+  {
+		"id": "5",
+		"name": "georgia",
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"price": 432,
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+  {
+		"id": "6",
+		"name": "leonardo",
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"price": 432,
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},{
+		"id": "7",
+		"name": "balu",
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"price": 432,
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+  {
+		"id": "8",
+		"name": "peach",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+  {
+		"id": "9",
+		"name": "avocado",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+  {
+		"id": "10",
+		"name": "nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+  {
+		"id": "11",
+		"name": "cosmos",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+  {
+		"id": "12",
+		"name": "florencia",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+  {
+		"id": "13",
+		"name": "mexico",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+  {
+		"id": "14",
+		"name": "italy",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+  {
+		"id": "15",
+		"name": "Nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+  {
+		"id": "16",
+		"name": "Nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+  {
+		"id": "17",
+		"name": "Nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+  {
+		"id": "18",
+		"name": "Nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+  {
+		"id": "19",
+		"name": "Nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},
+  {
+		"id": "20",
+		"name": "Nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},{
+		"id": "21",
+		"name": "Nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},{
+		"id": "22",
+		"name": "Nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},{
+		"id": "23",
+		"name": "Nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},{
+		"id": "24",
+		"name": "Nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},{
+		"id": "24",
+		"name": "Nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},{
+		"id": "26",
+		"name": "Nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},{
+		"id": "27",
+		"name": "Nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},{
+		"id": "28",
+		"name": "Nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},{
+		"id": "29",
+		"name": "Nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},{
+		"id": "30",
+		"name": "Nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	},{
+		"id": "31",
+		"name": "Nevada",
+		"price": 432,
+    "description": "Nevada - Dress in a shade of beige, made of pleasant to the touch fabric",
+		"checked": false,
+		"liked": false,
+    "size" : "M",
+    "color": "Grey"
+	}
+]`

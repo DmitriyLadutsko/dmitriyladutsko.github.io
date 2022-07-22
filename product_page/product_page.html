@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOU</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;500;600&family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="./product_page.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container_first">
+      <header class="header">
+        <div class="header__inner">
+          <a class="logo" href="../index/index.html">
+            <img
+              src="../images/logo.jpg"
+              alt="logo"
+              height="32px"
+              width="107px"
+            />
+          </a>
+          <nav class="menu">
+            <ul class="menu_list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">New</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="../catalog/catalog.html">Catalog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="../lookbook/lookbook.html"
+                  >Lookbook</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <nav class="header__nav-icons">
+            <ul class="header__nav-icons-list">
+              <li class="header__nav-icons-item hidden_li">
+                <div class="header__nav-icons-link link_search" href="#">
+                  <img
+                    id="search"
+                    src="../icons/search.svg"
+                    alt="search"
+                    width="40px"
+                    height="40px"
+                  />
+                  <div class="search-pole">
+                    <form action="">
+                      <input class="search" type="" placeholder="Search" />
+                    </form>
+                  </div>
+                </div>
+              </li>
+              <li class="header__nav-icons-item">
+                <a class="header__nav-icons-link" href="#"
+                  ><div class="header__nav-icons-caption">
+                    <span class="like caption">0</span>
+                    <img
+                      style="vertical-align: middle"
+                      src="../icons/heart.svg"
+                      alt="likes"
+                      width="40px"
+                      height="40px"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="header__nav-icons-item hidden_li">
+                <a class="header__nav-icons-link" href="#">
+                  <img
+                    src="../icons/user.svg"
+                    alt="profile"
+                    width="40px"
+                    height="40px"
+                  />
+                </a>
+              </li>
+              <li class="header__nav-icons-item">
+                <a
+                  id="shopping_basket"
+                  class="header__nav-icons-link"
+                  href="../shopping_basket/shopping_basket.html"
+                >
+                  <div class="header__nav-icons-caption">
+                    <span class="cart caption">0</span>
+                    <img
+                      style="vertical-align: middle"
+                      src="../icons/bag.svg"
+                      alt="bag"
+                      width="40px"
+                      height="40px"
+                    />
+                  </div>
+                </a>
+              </li>
+              <div class="burger-menu" id="burger-menu">
+                <span class="burger-menu-logo">
+                  <img src="../icons/logo-black.png" alt="logo" />
+                </span>
+    
+                <div class="burger-menu-btn">
+                  <span class="burger-menu-lines"></span>
+                </div>
+    
+                <div class="burger-menu-nav">
+                  <div class="separator"></div>
+    
+                  <div class="burger-menu-actions">
+                    <img src="../icons/search-white.png" alt="search" />
+                    <img src="../icons/user-white.png" alt="profile" />
+                  </div>
+    
+                  <div class="separator"></div>
+    
+                  <span class="burger-menu-item">New</span>
+                  <span class="burger-menu-item">Catalog</span>
+                  <span class="burger-menu-item-nested">CLOTHES</span>
+                  <span class="burger-menu-item-nested">DRESSES</span>
+                  <span class="burger-menu-item-nested">PAGAMAS</span>
+                  <span class="burger-menu-item-nested">SHOES</span>
+                  <span class="burger-menu-item-nested">ACCESSORIES</span>
+                  <span class="burger-menu-item">About</span>
+                  <span class="burger-menu-item">LookBook</span>
+                </div>
+    
+                <div class="burger-menu-overlay" id="burger-menu-overlay"></div>
+              </div>
+            </ul>
+          </nav>
+          
+          </div>
+        </div>
+      </header>
+    <section class="back">
+      <a href="../catalog/catalog.html" class="back_to_previous_page"
+        ><img class="back_vector" src="../icons/Vector.svg" alt="back" /> Back</a
+      >
+    </section>
+    <section class="product_page_slider">
+      <div class="product_page_slider__container">
+        <div class="product_page_slider__items">
+          <img class="product_page_slider__item  product_page_slider_item_different_size" src="../images/product_slider_img/img_1.jpg" alt="slider_item_1">
+          <img  class="product_page_slider__item" src="../images/product_slider_img/img_2.jpg" alt="slider_item_2">
+          <img class="product_page_slider__item" src="../images/product_slider_img/img_3.jpg" alt="slider_item_3">
+          <img  class="product_page_slider__item" src="../images/product_slider_img/img_2.jpg" alt="slider_item_4">
+        </div>
+      </div>
+    </section>
+    <section class="prodect_page_main_information">
+      <div class="product_page_main_information_container">
+        <div class="product_page_main_information_title_wrapper">
+          <div class="product_page_main_information_title">
+            Kinzly - Impressive dress in intense red with glitter
+          </div>
+          <div class="product_page_main_information_add_to_wishlist">
+            <img class="golden_svg" src="../icons/heart.svg" width="60px" height="60px" alt="like" />
+          </div>
+        </div>
+        <div class="product_page_main_information_price">469 PLN</div>
+        <div class="product_page_main_information_size_wrapper">
+          <div class="product_page_main_information_size_title">
+            Select a size
+          </div>
+          <div class="product_page_main_information_size_inner">
+            <a role="button" class="product_size_variant "> XS </a>
+            <a role="button" class="product_size_variant "> S </a>
+            <a role="button" class="product_size_variant "> M </a>
+            <a role="button" class="product_size_variant ">L</a>
+            <a role="button" class="product_size_variant "> XL </a>
+          </div>
+        </div>
+        <div class="product_page_main_information_color_wrapper">
+          <div class="product_page_main_information_color_title">
+            Select a color
+          </div>
+          <div class="product_page_main_information_color_inner">
+            <a role="button" class="color_inner_item">
+              <img
+                src="../images/color_select/Ellipse 1.png
+              "
+              width="20px"
+              height="20px"
+
+              alt="black"
+              />
+            </a>
+            <a role="button" class="color_inner_item">
+              <img
+                src="../images/color_select/Ellipse 2.png
+              "
+                alt="gold"
+              />
+            </a>
+            <a role="button" class="color_inner_item">
+              <img
+                src="../images/color_select/Ellipse 3.png
+              "
+                alt="silver"
+              />
+            </a>
+          </div>
+        </div>
+    <div class="product_page_main_information_characteristics">
+      <input
+        type="button"
+        class="button_main_information_descr border_bottom_button"
+        name="Description"
+        value="Description"
+        id="tab_1"
+      />
+      <input
+        type="button"
+        class="button_main_information_dimens"
+        name="Dimensions"
+        value="Description"
+        id="tab_2"
+      />
+      <div class="visible" id="txt_1">
+        <p
+          class="product_page_main_information_characteristics_Description_text"
+        >
+          Dress with long sleeves in a shade of intense red. An elegant creation
+          made of a pleasant to the touch fabric with glitter. Neckline in the
+          letter "V". <br /><br />
+          The cut of the dress masks the imperfections of the figure. Fastened
+          back to the zipper.
+        </p>
+      </div>
+      <div class="unvisible" id="txt_2">
+        <p
+          class="product_page_main_information_characteristics_Description_text"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eos
+          similique omnis sunt excepturi voluptates exercitationem iste illum
+          dolorum tempora!
+        </p>
+      </div>
+    </div>
+    <div class="product_page_button">
+          <form action="">
+            <button class="button_to_add" type="submit"> ADD TO BAG</button>
+          </form>
+        </div>
+        <div class="discount">
+          <div class="discount_title">
+            <a class="more_about_discount" href="#"
+              > <span class="gold_points">469 points </span> &#124 more about discount
+            </a>
+          </div>
+        </div>
+        <div class="accordion">
+      <div class="accordion-item">
+          <button class="accordion-header">
+            <strong>Delivery information</strong><i class="fas fa-angle-down"></i>
+          </button>
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque,
+            voluptates minima quod quisquam et quasi debitis officia non illo
+            harum iure eos reprehenderit quaerat, veritatis asperiores facilis qui
+            neque.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <strong>Shipping & Returns</strong><i class="fas fa-angle-down"></i>
+          </button>
+          <div class="accordion-body">
+            Dignissimos perspiciatis amet, qui soluta aliquid, ipsa ea alias
+            quidem officiis vel, inventore quod labore aspernatur exercitationem
+            fugit explicabo rerum dolores quo unde assumenda reprehenderit vero
+            temporibus? Magni, nesciunt vero?
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <strong>Reviews (3) </strong><i class="fas fa-angle-down"></i>
+          </button>
+          <div class="accordion-body">
+            <div class="reviews_wrapper">
+              <div class="reviews_user_profile">
+                <div class="user_name">Karolina</div>
+                <div class="verified">Verifed customer</div>
+              </div>
+              <div class="reviews_text_descr">
+                <div class="reveiws_star">
+                  <img src="../icons/star_rating.png " alt="star">
+                  <img src="../icons/star_rating.png " alt="star">
+                  <img src="../icons/star_rating.png " alt="star">
+                  <img src="../icons/star_rating.png " alt="star">
+                  <img src="../icons/star_rating.png " alt="star">
+                </div>
+                <div class="reveiws_text">Very beautiful dress model. Fully matches the description and photo. Happy with the purchase.</div>
+              </div>
+            </div>
+            <div class="reviews_wrapper">
+              <div class="reviews_user_profile">
+                <div class="user_name">Irina</div>
+                <div class="verified">Verifed customer</div>
+              </div>
+              <div class="reviews_text_descr">
+                <div class="reveiws_star">
+                  <img src="../icons/star_rating.png " alt="star">
+                  <img src="../icons/star_rating.png " alt="star">
+                  <img src="../icons/star_rating.png " alt="star">
+                  <img src="../icons/star_rating.png " alt="star">
+                  <img src="../icons/star_rating.png " alt="star">
+                </div>
+                <div class="reveiws_text">Fast free shipping. A very successful model.</div>
+              </div>
+            </div>
+            <div class="reviews_wrapper">
+              <div class="reviews_user_profile">
+                <div class="user_name">Merry</div>
+                <div class="verified">Verifed customer</div>
+              </div>
+              <div class="reviews_text_descr">
+                <div class="reveiws_star">
+                  <img src="../icons/star_rating.png " alt="star">
+                  <img src="../icons/star_rating.png " alt="star">
+                  <img src="../icons/star_rating.png " alt="star">
+                  <img src="../icons/star_rating.png " alt="star">
+                  <img src="../icons/star_rating.png " alt="star">
+                </div>
+                <div class="reveiws_text">Very beautiful dress model. Fully matches the description and photo. Happy with the purchase.</div>
+              </div>
+              
+            </div>
+            <div class="total_rating">
+              <div class="total_rating_wrapper">  
+                  <div class="mark">5.0</div>  
+                  <div class="reveiws_star reveiws_star_320px">
+                    <img src="../icons/star_rating.png " alt="star">
+                    <img src="../icons/star_rating.png " alt="star">
+                    <img src="../icons/star_rating.png " alt="star">
+                    <img src="../icons/star_rating.png " alt="star">
+                    <img src="../icons/star_rating.png " alt="star">
+                  </div> 
+                  <div class="amout_reviews">3 reviews</div>
+              </div> 
+              <div class="write_reveiws">Write a review</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </section> 
+    <div class="container_product_page_also_like">
+      <h1 class="also_like">YOU MAY <span class="gold">ALSO LIKE</span></h1>
+      <div class="also_like_cards">
+        <div class="catalog__product__cards big  also_like_cards_item">
+              <img class="also_like_img"
+                src="../images/catalog/catalog_card_2.jpg"
+                alt="catalog_card_2"
+              />
+              <div class="product_name_and_action">
+                <div class="name_of_card">Pasola Różowa</div>
+                <div class="like_and_by_product_page ">
+                  
+                  <a role="button" id="like-17" class="likes"
+                  ><img class="golden_svg" src="../icons/heart.svg" alt="like"
+                /></a>
+                  <a role="button" id="cart-17" class="carts"
+                    ><img
+                      class="catalog_bag golden_svg"
+                      src="../icons/bag.svg"
+                      alt="by"
+                  /></a>
+                </div>
+              </div>
+              <div class="price">469 PLN</div>
+            </div>
+            <div class="catalog__product__cards big card_2  also_like_cards_item">
+              <img class="also_like_img"
+                src="../images/catalog/catalog_card_7.jpg"
+                alt="catalog_card_2"
+              />
+              <div class="product_name_and_action">
+                <div class="name_of_card">Pasola Różowa</div>
+                <div class="like_and_by_product_page">
+                  
+                  <a role="button" id="like-18" class="likes"
+                  ><img class="golden_svg" src="../icons/heart.svg" alt="like"
+                /></a>
+                  <a role="button" id="cart-18" class="carts"
+                    ><img
+                      class="catalog_bag golden_svg"
+                      src="../icons/bag.svg"
+                      alt="by"
+                  /></a>
+                </div>
+              </div>
+              <div class="price">469 PLN</div>
+            </div>
+            <div class="catalog__product__cards small card_5  also_like_cards_item">
+              <img class="also_like_img"
+                src="../images/catalog/catalog_card_8.jpg"
+                alt="catalog_card_8
+                "
+              />
+              <div class="product_name_and_action">
+                <div class="name_of_card">Pasola Różowa</div>
+                <div class="like_and_by_product_page">
+                  
+                  <a role="button" id="like-19" class="likes"
+                  ><img class="golden_svg" src="../icons/heart.svg" alt="like"
+                /></a>
+                  <a role="button" id="cart-19" class="carts"
+                    ><img
+                      class="catalog_bag golden_svg"
+                      src="../icons/bag.svg"
+                      alt="by"
+                  /></a>
+                </div>
+              </div>
+              <div class="price">469 PLN</div>
+            </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="subscribe">
+          <p>Signup to our newsletter</p>
+          <div class="subscribe-form">
+              <input type="text" placeholder="Email">
+              <button>subscribe</button>
+          </div>
+          <div class="policy">
+              <input type="checkbox">
+              <span>I would to subscribe to Disconnect newsletter, I agree to the <a>Privacy policy</a></span>
+          </div>
+      </div>
+      <div class="footer-wrapper">
+          <div class="footer-container">
+              <div class="footer-map">
+                  <img class="footer-logo"
+                      src="../images/footer_logo.png"
+                      width="133px"
+                      height="40px"
+                      alt="logo"
+                  >
+                  <div class="footer-navigation">
+                      <h3>Navigation</h3>
+                      <div class="links">
+                          <span> <a class="footer_links" href="../catalog/catalog.html" class="to_catalog" >Catalog </a></span>
+                          <span>News</span>
+                          <span><a class="footer_links" href="../lookbook/lookbook.html" class="to_lookbook" > LookBook </a></span>
+                          <span>About</span>
+                      </div>
+                      <div class="chevron">
+                          <img class="up" src="../icons/chevron-up.png" alt="up">
+                          <img class="down" src="../icons/chevron-down.png" alt="down">
+                      </div>
+                  </div>
+                  <div class="footer-service">
+                      <h3>Customer service</h3>
+                      <div class="links">
+                          <span>Payment and security</span>
+                          <span>Size guide</span>
+                          <span>Shipping</span>
+                          <span>Returns</span>
+                      </div>
+
+                      <div class="chevron">
+                          <img class="up" src="../icons/chevron-up.png" alt="up">
+                          <img class="down" src="../icons/chevron-down.png" alt="down">
+                      </div>
+                  </div>
+                  <div class="follow-us">
+                      <h3>Follow us</h3>
+                      <div class="lg">
+                          <span>Instagram</span>
+                          <span>Facebook</span>
+                          <span>YouTube</span>
+                      </div>
+                      <div class="sm">
+                          <img class="up" src="../icons/facebook.png" alt="facebook">
+                          <img class="up" src="../icons/instagramm.png" alt="instagramm">
+                          <img class="up" src="../icons/youtube.png" alt="youtube">
+                      </div>
+                  </div>
+                  <div class="footer-subscribe">
+                      <h3 class="footer_h3">Be the first to know</h3>
+                      <form action="#" method="post">
+                          <input type="email" name="email" placeholder="Email" required>
+                          <br>
+                          <button type="submit">subscribe</button>
+                      </form>
+                  </div>
+              </div>
+              <hr class="delimiter">
+              <div class="footer-signature">
+                  <div class="rights">© Lou. All rights reserved </div>
+                  <div class="policy">Private Policy </div>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/data.json"></script>
+    <script src="../js/product_page.js"></script>
+    <script src="../js/according.js"></script>
+  </body>
+</html>
