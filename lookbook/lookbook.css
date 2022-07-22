@@ -1,0 +1,382 @@
+/* lookbook */
+.lookbook_h1-title {
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-96px);
+  line-height: var(--line-height);
+  color: var(--color-txt-black);
+  font-family: var(--second-font-family);
+  margin-top: 11%;
+}
+h2 {
+  font-weight: var(--font-weight-500);
+  font-size: 2em;
+  line-height: var(--line-height);
+  font-family: var(--main-font-family);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.text {
+  margin-top: 11%;
+}
+.lookbook_h1-title {
+  margin-bottom: -103px;
+  text-align: center;
+}
+
+.lookbook-img-wrapper_1 {
+  text-align: center;
+}
+
+.lookbook_h1-subtitle {
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-96px);
+  line-height: var(--line-height);
+  font-family: var(--second-font-family);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: -69px;
+}
+.subscribe_lb {
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-32px);
+  line-height: var(--line-height);
+  letter-spacing: var(--lettert-spacing-0-02);
+  text-transform: uppercase;
+  color: var(--color-txt-black);
+  font-family: var(--main-font-family);
+}
+
+.lookbook_subscribe {
+  margin-top: 7.5%;
+}
+.subscribe_lb + .subscribe_lb {
+  margin-top: 1%;
+}
+
+.photo {
+  max-width: 1400px;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.lookbook_big_img {
+  width: 100%;
+  height: auto;
+}
+.lookbook-img-wrapper_1 {
+  margin-top: 2%;
+  display: flex;
+  max-width: 675px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lookbook__img-wrapper_2 {
+  position: relative;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  flex-basis: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lookbook__img-wrapper {
+  margin-top: 50px;
+  position: relative;
+}
+
+.lookbook-img {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.img_absolute_1 {
+  max-height: 480px;
+  max-width: 335px;
+}
+.img_absolute_2 {
+  position: absolute;
+  top: 0;
+  left: 25.3%;
+}
+.img_margin_1 {
+  margin-left: 51%;
+}
+.lookbook_figcaption {
+  font-weight: var(--font-weight-300);
+  font-size: var(--font-size-14px);
+  line-height: var(--line-height);
+  color: var(--color-txt-black);
+  font-family: var(--main-font-family);
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+.figure {
+  margin-bottom: 2%;
+  position: relative;
+}
+.img_absolute_3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img_margin_2 {
+  margin-left: 51%;
+}
+.img_absolute_4 {
+  position: absolute;
+  left: 75%;
+  bottom: 0.4%;
+}
+.lookbook_display {
+  display: flex;
+  justify-content: space-between;
+}
+.figcaption__display {
+  margin-top: -6%;
+}
+.lookbook__img-inner {
+  text-align: center;
+}
+.figcaption_last {
+  margin-top: 0%;
+}
+
+/*media queries*/
+
+@media (max-width: 1400px) {
+  .img_margin_1 {
+    max-width: 600px;
+    max-height: 980px;
+    margin-left: 54%;
+  }
+  .img_absolute_2 {
+    margin-left: 1%;
+  }
+  .img_margin_2 {
+    margin-left: 48%;
+  }
+}
+
+@media (max-width: 1321px) {
+  .img_margin_1 {
+    margin-left: 41%;
+  }
+
+  .img_absolute_2 {
+    left: 27%;
+  }
+}
+@media (max-width: 1217px) {
+  .img_absolute_2 {
+    left: 0;
+  }
+}
+
+@media (max-width: 1050px) {
+  .lookbook__img-wrapper_2 img {
+    max-width: 50%;
+  }
+
+  .img_absolute_2 {
+    left: 0;
+  }
+
+  .img_margin_2 {
+    max-width: 50%;
+  }
+  .img_absolute_4 {
+    display: none;
+  }
+}
+@media (max-width: 891px) {
+  .lookbook_h1-title {
+    font-size: 60px;
+    margin-bottom: -57px;
+  }
+
+  .lookbook-img-wrapper_1 {
+    max-width: 579px;
+  }
+
+  .lookbook_h1-subtitle {
+    font-size: 70px;
+    margin-top: -6%;
+  }
+  .subscribe_lb {
+    font-size: 24px;
+  }
+
+  .img_absolute_3 {
+    max-width: 353px;
+  }
+}
+@media (max-width: 763px) {
+  .photo {
+    padding: 0 5px;
+  }
+
+  .img_absolute_1 {
+    max-height: 524px;
+  }
+
+  .img_margin_1 {
+    max-height: 524px;
+  }
+  .img_absolute_3 {
+    display: none;
+  }
+  .img_margin_2 {
+    margin-left: auto;
+  }
+
+  .lookbook_display {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lookbook_img_763px {
+    max-width: 50%;
+    margin-bottom: 42px;
+  }
+
+  .lookbook__img-inner img {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  .img_absolute_1 {
+    margin-left: 2px;
+  }
+  .lookbook__img-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .img_margin_1 {
+    max-height: 480px;
+  }
+}
+
+@media (max-width: 671px) {
+  .img_absolute_2 {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .img_margin_1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 640px) {
+  .lookbook_h1-subtitle {
+    margin-top: -8%;
+  }
+
+  .lookbook_subscribe {
+    margin-top: -4.5%;
+  }
+  .lookbook__img-wrapper_2 {
+    flex-direction: column;
+  }
+  .img_absolute_1 {
+    margin-top: 10px;
+  }
+  .lookbook__img-wrapper_2 img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img_margin_1 {
+    max-height: 480px;
+  }
+
+  .lookbook__img-wrapper {
+    margin-top: 10px;
+  }
+  .lookbook_img_763px {
+    display: none;
+  }
+  .figure_320px img {
+    max-width: 613px;
+  }
+}
+
+@media (max-width: 550px) {
+  .lookbook_h1-title {
+    font-size: 45px;
+    margin-bottom: -41px;
+  }
+
+  .lookbook_h1-subtitle {
+    font-size: 58px;
+  }
+
+  .subscribe_lb {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 421px) {
+  .lookbook_h1-title {
+    font-size: 30px;
+    margin-bottom: -27px;
+  }
+
+  .lookbook_h1-subtitle {
+    font-size: 38px;
+    margin-top: -7%;
+  }
+  .subscribe_lb {
+    font-size: 16px;
+  }
+
+  .figure img {
+    max-width: 318px;
+    max-height: 479px;
+  }
+}
+
+@media (max-width: 320px) {
+  .lookbook-img-wrapper_1 {
+    max-width: 320px;
+    max-height: 411px;
+    padding: 0 5px;
+  }
+  .lookbook_subscribe {
+    margin-top: -8.5%;
+  }
+  .img_margin_1 {
+    max-height: 234px;
+  }
+
+  .figure img {
+    max-width: 155px;
+    max-height: 234px;
+  }
+  .figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .figure_320px {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .finaly_img_lookbook {
+    justify-content: center;
+  }
+  .img_margin_2 {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

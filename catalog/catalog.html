@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOU</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/slick.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;500;600&family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="./catalog.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+      <div class="container_first">
+      <header class="header">
+        <div class="header__inner">
+          <a class="logo" href="../index/index.html">
+            <img
+              src="../images/logo.jpg"
+              alt="logo"
+              height="32px"
+              width="107px"
+            />
+          </a>
+          <nav class="menu">
+            <ul class="menu_list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">New</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="../catalog/catalog.html">Catalog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="../lookbook/lookbook.html"
+                  >Lookbook</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <nav class="header__nav-icons">
+            <ul class="header__nav-icons-list">
+              <li class="header__nav-icons-item hidden_li">
+                <div class="header__nav-icons-link link_search" href="#">
+                  <img
+                    id="search"
+                    src="../icons/search.svg"
+                    alt="search"
+                    width="40px"
+                    height="40px"
+                  />
+                  <div class="search-pole">
+                    <form action="">
+                      <input class="search" type="" placeholder="Search" />
+                    </form>
+                  </div>
+                </div>
+              </li>
+              <li class="header__nav-icons-item">
+                <a class="header__nav-icons-link" href="#"
+                  ><div class="header__nav-icons-caption">
+                    <span class="like caption">0</span>
+                    <img
+                      style="vertical-align: middle"
+                      src="../icons/heart.svg"
+                      alt="likes"
+                      width="40px"
+                      height="40px"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="header__nav-icons-item hidden_li">
+                <a class="header__nav-icons-link" href="#">
+                  <img
+                    src="../icons/user.svg"
+                    alt="profile"
+                    width="40px"
+                    height="40px"
+                  />
+                </a>
+              </li>
+              <li class="header__nav-icons-item">
+                <a
+                  id="shopping_basket"
+                  class="header__nav-icons-link"
+                  href="../shopping_basket/shopping_basket.html"
+                >
+                  <div class="header__nav-icons-caption">
+                    <span class="cart caption">0</span>
+                    <img
+                      style="vertical-align: middle"
+                      src="../icons/bag.svg"
+                      alt="bag"
+                      width="40px"
+                      height="40px"
+                    />
+                  </div>
+                </a>
+              </li>
+              <div class="burger-menu" id="burger-menu">
+                <span class="burger-menu-logo">
+                  <img src="../icons/logo-black.png" alt="logo" />
+                </span>
+    
+                <div class="burger-menu-btn">
+                  <span class="burger-menu-lines"></span>
+                </div>
+    
+                <div class="burger-menu-nav">
+                  <div class="separator"></div>
+    
+                  <div class="burger-menu-actions">
+                    <img src="../icons/search-white.png" alt="search" />
+                    <img src="../icons/user-white.png" alt="profile" />
+                  </div>
+    
+                  <div class="separator"></div>
+    
+                  <span class="burger-menu-item">New</span>
+                  <span class="burger-menu-item">Catalog</span>
+                  <span class="burger-menu-item-nested">CLOTHES</span>
+                  <span class="burger-menu-item-nested">DRESSES</span>
+                  <span class="burger-menu-item-nested">PAGAMAS</span>
+                  <span class="burger-menu-item-nested">SHOES</span>
+                  <span class="burger-menu-item-nested">ACCESSORIES</span>
+                  <span class="burger-menu-item">About</span>
+                  <span class="burger-menu-item">LookBook</span>
+                </div>
+    
+                <div class="burger-menu-overlay" id="burger-menu-overlay"></div>
+              </div>
+            </ul>
+          </nav>
+          
+          </div>
+        </div>
+      </header> 
+    </div>
+    <section class="catalog">
+      <div class="catalog__title">Catalog</div>
+      <div class="catalog__items">
+        <a class="catalog__item" href="#">Clothes</a>
+        <a class="catalog__item" href="#">Dresses </a>
+        <a class="catalog__item" href="#">Pagamas</a>
+        <a class="catalog__item" href="#">Shoes</a>
+        <a class="catalog__item" href="#">Accessories</a>
+      </div>
+      <hr class="catalog_lines" />
+      <div class="button_wrapper">
+        <div class="dropdown">
+          <button
+            class="Custome_Filters btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Filters
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li>
+              <a class="dropdown-item" href="#">Prise, low to high </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Prise, high to low </a>
+            </li>
+            <li><a class="dropdown-item" href="#">New</a></li>
+            <li><a class="dropdown-item" href="#">Sales</a></li>
+            <li><a class="dropdown-item" href="#">Bestsellers</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            class="Custome_Filters btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Sorting
+          </button>
+          <ul
+            class="dropdown-menu dropdown_custom"
+            aria-labelledby="dropdownMenuButton1"
+          >
+            <div class="color_container">
+              <div class="color_title">Color</div>
+              <div class="select_color_wrapper">
+                <div class="first_column">
+                  <input
+                    class="size_of_check"
+                    type="checkbox"
+                    name="a"
+                    value="BLACK"
+                  />
+                  <p class="text_input">BLACK</p>
+                  <input
+                    class="size_of_check"
+                    type="checkbox"
+                    name="a"
+                    value="BROWN"
+                  />
+                  <p class="text_input">BROWN</p>
+
+                  <input
+                    class="size_of_check"
+                    type="checkbox"
+                    name="a"
+                    value="RED"
+                  />
+                  <p class="text_input">RED</p>
+
+                  <input
+                    class="size_of_check"
+                    type="checkbox"
+                    name="a"
+                    value="orange"
+                  />
+                  <p class="text_input">orange</p>
+
+                  <input
+                    class="size_of_check"
+                    type="checkbox"
+                    name="a"
+                    value="color"
+                  />
+                  <p class="text_input">color</p>
+                </div>
+                <div class="second_column">
+                  <input
+                    class="size_of_check"
+                    type="checkbox"
+                    name="a"
+                    value="GREEN"
+                  />
+                  <p class="text_input">GREEN</p>
+
+                  <input
+                    class="size_of_check"
+                    type="checkbox"
+                    name="a"
+                    value="YELLOW AND GOLD"
+                  />
+                  <p class="text_input">YELLOW AND GOLD</p>
+
+                  <input
+                    class="size_of_check"
+                    type="checkbox"
+                    name="a"
+                    value="WHITE"
+                  />
+                  <p class="text_input">WHITE</p>
+
+                  <input
+                    class="size_of_check"
+                    type="checkbox"
+                    name="a"
+                    value="BLUE"
+                  />
+                  <p class="text_input">BLUE</p>
+
+                  <input
+                    class="size_of_check"
+                    type="checkbox"
+                    name="a"
+                    value="OTHER"
+                  />
+                  <p class="text_input">OTHER</p>
+                </div>
+              </div>
+            </div>
+            <div class="size_decr">
+              <div class="size_title">Size</div>
+              <div class="size_variant_wrapper">
+                <a role="button" class="size_variant"> XS </a>
+                <a role="button" class="size_variant"> S </a>
+                <a role="button" class="size_variant"> M </a>
+                <a role="button" class="size_variant">L</a>
+                <a role="button" class="size_variant"> XL </a>
+              </div>
+            </div>
+            <a role="button" class="reset_all">Reset all</a>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="product">
+      <div class="container_catalog">
+        <div class="container__catalog__wrapper_1">
+          <div class="catalog__product__cards small card_640px">
+            <a href="../product_page/product_page.html">
+              <img
+                class="img_catalog_page"
+                src="../images/catalog/catalog_card_1.jpg"
+                alt="catalog_card_1"
+              />
+            </a>
+            <div class="product_name_and_acion">
+              <div class="name_of_card">Pasola Różowa</div>
+              <div class="like_and_by">
+                <a role="button" id="like-1" class="likes"
+                  ><img class="golden_svg" src="../icons/heart.svg" alt="like"
+                /></a>
+                <a role="button" id="cart-1" class="carts"
+                  ><img
+                    class="catalog_bag golden_svg"
+                    src="../icons/bag.svg"
+                    alt="by"
+                /></a>
+              </div>
+            </div>
+            <div class="price">469 PLN</div>
+          </div>
+          <div class="catalog__product__cards big card_2">
+            <a href="../product_page/product_page.html">
+              <img
+                class="img_catalog_page"
+                src="../images/catalog/catalog_card_2.jpg"
+                alt="catalog_card_2"
+              />
+            </a>
+            <div class="product_name_and_acion">
+              <div class="name_of_card">Pasola Różowa</div>
+              <div class="like_and_by">
+                <a role="button" id="like-2" class="likes"
+                  ><img class="golden_svg" src="../icons/heart.svg" alt="like"
+                /></a>
+                <a role="button" id="cart-2" class="carts"
+                  ><img
+                    class="catalog_bag golden_svg"
+                    src="../icons/bag.svg"
+                    alt="by"
+                /></a>
+              </div>
+            </div>
+            <div class="price">469 PLN</div>
+          </div>
+          <div class="catalog__product__cards small card_3">
+            <a href="../product_page/product_page.html">
+              <img
+                class="img_catalog_page"
+                src="../images/catalog/catalog_card_3.jpg"
+                alt="catalog_card_3"
+              />
+            </a>
+            <div class="product_name_and_acion">
+              <div class="name_of_card">Pasola Różowa</div>
+              <div class="like_and_by">
+                <a role="button" id="like-3" class="likes"
+                  ><img class="golden_svg" src="../icons/heart.svg" alt="like"
+                /></a>
+                <a role="button" id="cart-3" class="carts"
+                  ><img
+                    class="catalog_bag golden_svg"
+                    src="../icons/bag.svg"
+                    alt="by"
+                /></a>
+              </div>
+            </div>
+            <div class="price">469 PLN</div>
+          </div>
+        </div>
+         <div class="container__catalog__wrapper_2">
+          <div class="catalog__product__cards small  card_4_640px_div">
+            <a href="../product_page/product_page.html">
+              <img
+                class="img_catalog_page  card_4"
+                src="../images/catalog/catalog_card_4.jpg"
+                alt="catalog_card_4"
+              />
+            </a>
+            <div class="product_name_and_acion">
+              <div class="name_of_card">Pasola Różowa</div>
+              <div class="like_and_by">
+                <a role="button" id="like-4" class="likes"
+                  ><img class="golden_svg" src="../icons/heart.svg" alt="like"
+                /></a>
+                <a role="button" id="cart-4" class="carts"
+                  ><img
+                    class="catalog_bag golden_svg"
+                    src="../icons/bag.svg"
+                    alt="by"
+                /></a>
+              </div>
+            </div>
+            <div class="price">469 PLN</div>
+          </div>
+          <div class="catalog__product__cards big card_5_640px_div">
+            <a href="../product_page/product_page.html">
+              <img
+                class="img_catalog_page card_5"
+                src="../images/catalog/catalog_card_5.jpg"
+                alt="catalog_card_5"
+              />
+            </a>
+            <div class="product_name_and_acion">
+              <div class="name_of_card">Pasola Różowa</div>
+              <div class="like_and_by">
+                <a role="button" id="like-5" class="likes"
+                  ><img class="golden_svg" src="../icons/heart.svg" alt="like"
+                /></a>
+                <a role="button" id="cart-5" class="carts"
+                  ><img
+                    class="catalog_bag golden_svg"
+                    src="../icons/bag.svg"
+                    alt="by"
+                /></a>
+              </div>
+            </div>
+            <div class="price">469 PLN</div>
+          </div>
+        </div>
+         <div class="container__catalog__wrapper_3">
+          <div class="catalog__product__cards small lonely">
+            <a href="../product_page/product_page.html">
+              <img
+                class="img_catalog_page"
+                src="../images/catalog/catalog_card_6.jpg"
+                alt="catalog_card_6"
+              />
+            </a>
+            <div class="product_name_and_acion">
+              <div class="name_of_card">Pasola Różowa</div>
+              <div class="like_and_by">
+                <a role="button" id="like-6" class="likes"
+                  ><img class="golden_svg" src="../icons/heart.svg" alt="like"
+                /></a>
+                <a role="button" id="cart-6" class="carts"
+                  ><img
+                    class="catalog_bag golden_svg"
+                    src="../icons/bag.svg"
+                    alt="by"
+                /></a>
+              </div>
+            </div>
+            <div class="price">469 PLN</div>
+          </div>
+        </div>
+        <div class="container__catalog__wrapper_4">
+          <div class="catalog__product__cards big cart_7">
+            <a href="../product_page/product_page.html">
+              <img
+                class="img_catalog_page"
+                src="../images/catalog/catalog_card_7.jpg"
+                alt="catalog_card_7"
+              />
+            </a>
+            <div class="product_name_and_acion">
+              <div class="name_of_card">Pasola Różowa</div>
+              <div class="like_and_by">
+                <a role="button" id="like-7" class="likes"
+                  ><img class="golden_svg" src="../icons/heart.svg" alt="like"
+                /></a>
+                <a role="button" id="cart-7" class="carts"
+                  ><img
+                    class="catalog_bag golden_svg"
+                    src="../icons/bag.svg"
+                    alt="by"
+                /></a>
+              </div>
+            </div>
+            <div class="price">469 PLN</div>
+          </div>
+          <div class="catalog__product__cards small card_8">
+            <a href="../product_page/product_page.html">
+              <img
+                class="img_catalog_page"
+                src="../images/catalog/catalog_card_8.jpg"
+                alt="catalog_card_8
+              "
+              />
+            </a>
+            <div class="product_name_and_acion">
+              <div class="name_of_card">Pasola Różowa</div>
+              <div class="like_and_by">
+                <a role="button" id="like-8" class="likes"
+                  ><img class="golden_svg" src="../icons/heart.svg" alt="like"
+                /></a>
+                <a role="button" id="cart-8" class="carts"
+                  ><img
+                    class="catalog_bag golden_svg"
+                    src="../icons/bag.svg"
+                    alt="by"
+                /></a>
+              </div>
+            </div>
+            <div class="price">469 PLN</div>
+          </div>
+          <div class="catalog__product__cards small card_9">
+            <a href="../product_page/product_page.html">
+              <img
+                class="img_catalog_page"
+                src="../images/catalog/catalog_card_9.jpg"
+                alt="catalog_card_9"
+              />
+            </a>
+            <div class="product_name_and_acion">
+              <div class="name_of_card">Pasola Różowa</div>
+              <div class="like_and_by">
+                <a role="button" id="like-9" class="likes"
+                  ><img class="golden_svg" src="../icons/heart.svg" alt="like"
+                /></a>
+                <a role="button" id="cart-9" class="carts"
+                  ><img
+                    class="catalog_bag golden_svg"
+                    src="../icons/bag.svg"
+                    alt="by"
+                /></a>
+              </div>
+            </div>
+            <div class="price">469 PLN</div>
+          </div>
+        </div>
+        <div class="show_more_wrapper ">
+            <a class="New_Collection-link" href="../lookbook/lookbook.html"> <h3  class="New_Collection-lines small_vision ">Show more</h3>
+            </a>
+        </div>
+      </div> 
+
+
+    </section>
+    <footer class="footer">
+      <div class="subscribe">
+          <p>Signup to our newsletter</p>
+          <div class="subscribe-form">
+              <input type="text" placeholder="Email">
+              <button>subscribe</button>
+          </div>
+          <div class="policy">
+              <input type="checkbox">
+              <span>I would to subscribe to Disconnect newsletter, I agree to the <a>Privacy policy</a></span>
+          </div>
+      </div>
+      <div class="footer-wrapper">
+          <div class="footer-container">
+              <div class="footer-map">
+                  <img class="footer-logo"
+                      src="../images/footer_logo.png"
+                      width="133px"
+                      height="40px"
+                      alt="logo"
+                  >
+                  <div class="footer-navigation">
+                      <h3>Navigation</h3>
+                      <div class="links">
+                          <span> <a class="footer_links" href="../catalog/catalog.html" class="to_catalog" >Catalog </a></span>
+                          <span>News</span>
+                          <span><a class="footer_links" href="../lookbook/lookbook.html" class="to_lookbook" > LookBook </a></span>
+                          <span>About</span>
+                      </div>
+                      <div class="chevron">
+                          <img class="up" src="../icons/chevron-up.png" alt="up">
+                          <img class="down" src="../icons/chevron-down.png" alt="down">
+                      </div>
+                  </div>
+                  <div class="footer-service">
+                      <h3>Customer service</h3>
+                      <div class="links">
+                          <span>Payment and security</span>
+                          <span>Size guide</span>
+                          <span>Shipping</span>
+                          <span>Returns</span>
+                      </div>
+
+                      <div class="chevron">
+                          <img class="up" src="../icons/chevron-up.png" alt="up">
+                          <img class="down" src="../icons/chevron-down.png" alt="down">
+                      </div>
+                  </div>
+                  <div class="follow-us">
+                      <h3>Follow us</h3>
+                      <div class="lg">
+                          <span>Instagram</span>
+                          <span>Facebook</span>
+                          <span>YouTube</span>
+                      </div>
+                      <div class="sm">
+                          <img class="up" src="../icons/facebook.png" alt="facebook">
+                          <img class="up" src="../icons/instagramm.png" alt="instagramm">
+                          <img class="up" src="../icons/youtube.png" alt="youtube">
+                      </div>
+                  </div>
+                  <div class="footer-subscribe">
+                      <h3 class="footer_h3">Be the first to know</h3>
+                      <form action="#" method="post">
+                          <input type="email" name="email" placeholder="Email" required>
+                          <br>
+                          <button type="submit">subscribe</button>
+                      </form>
+                  </div>
+              </div>
+              <hr class="delimiter">
+              <div class="footer-signature">
+                  <div class="rights">© Lou. All rights reserved </div>
+                  <div class="policy">Private Policy </div>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/data.json"></script>
+    
+  </body>
+</html>
